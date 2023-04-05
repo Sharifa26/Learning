@@ -1,5 +1,5 @@
 
-
+//day-05-array
 //console.log(countries)
 
 let arr = [2,4,5,6,7,1,3,6,0]; 
