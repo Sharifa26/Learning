@@ -2,6 +2,7 @@
 
 //alert('Open the browser console whenever you work on JavaScript')
 
+//day-05-conditions
 
 console.log('sharifa');
 let numb = prompt('Enter a number');
