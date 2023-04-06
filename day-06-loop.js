@@ -1,5 +1,4 @@
-//console.log(countries)
-//alert('Open the console and check if the countries has been loaded')
+//day-06-loop
 
 const countr = require('../data/countries');
 let array = [1,2,3,4,5];
