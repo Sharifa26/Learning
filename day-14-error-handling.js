@@ -4,56 +4,55 @@
 
 try {
     // code that may throw an error
-    } catch (err) {
+} catch (err) {
     // code to be executed if an error occurs
-    } finally {
+} finally {
     // code to be executed regardless of an error occurs or not
-    }
-    
-    try {
+}
+
+try {
     let lastName = 'Shaikh'
     let fullName = fistName + ' ' + lastName
-    } catch (err) {
+} catch (err) {
     console.log(err)
-    }
-    
-    try {
+}
+
+try {
     let lastName = 'Shaikh'
     let fullName = fistName + ' ' + lastName
-    } catch (err) {
+} catch (err) {
     console.log(err)
-    } finally{
+} finally {
     console.log('It will run at any Case');
-    }
-    
-    try {
+}
+
+try {
     let lastName = 'Shaikh'
     let fullName = fistName + ' ' + lastName
-    } catch (err) {
+} catch (err) {
     console.log('Name of the error ::', err.name)
     console.log('Error message ::', err.message)
-    } finally {
+} finally {
     console.log('In any case I will be executed')
+}
+
+//throw
+const throwErrorExample = () => {
+    let message
+    let x = prompt('Enter a number: ')
+    try {
+        if (x == '') throw 'empty'
+        if (isNaN(x)) throw 'not a number'
+        x = Number(x)
+        if (x < 5) throw 'too low'
+        if (x > 10) throw 'too high'
+    } catch (err) {
+        console.log(err)
     }
-    
-    //throw
-    const throwErrorExample = () => {
-        let message
-        let x = prompt('Enter a number: ')
-        try {
-          if (x == '') throw 'empty'
-          if (isNaN(x)) throw 'not a number'
-          x = Number(x)
-          if (x < 5) throw 'too low'
-          if (x > 10) throw 'too high'
-        } catch (err) {
-          console.log(err)
-        }
-      }
-      throwErrorExample();
-    
-      /** Types of Error */
-      ReferenceError
-      SyntaxError
-      TypeError
-    
+}
+throwErrorExample();
+
+/** Types of Error */
+ReferenceError
+SyntaxError
+TypeError

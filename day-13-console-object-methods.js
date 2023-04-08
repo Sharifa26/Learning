@@ -17,7 +17,7 @@ console.clear()
 // console.log();
 
 console.log('30 days of learning');
-console.log('%d %s of learning',20,'DAYS');
+console.log('%d %s of learning', 20, 'DAYS');
 
 //css
 console.log('%c30 Days Of JavaScript', 'color:green') // log output is green
@@ -38,7 +38,7 @@ console.warn('This is a warning')
 console.error('this is an error message');
 
 //table()
-const names = ['sharifa','shaikh','mohini','sachin','dhanraj']
+const names = ['sharifa', 'shaikh', 'mohini', 'sachin', 'dhanraj']
 console.table(names);
 
 /**OUTPUT
@@ -53,12 +53,12 @@ console.table(names);
 └─────────┴───────────┘
  */
 
-const people ={
-    name:'Sharifa',
-    title:'programmer',
-    age:21,
-    country:'India',
-    city:'Arcot'
+const people = {
+  name: 'Sharifa',
+  title: 'programmer',
+  age: 21,
+  country: 'India',
+  city: 'Arcot'
 }
 console.table(people);
 
@@ -75,11 +75,11 @@ console.table(people);
  */
 
 const countries = [
-    ['asia',['Finland', 'Helsinki']],
-    ['Sweden', 'Stockholm'],
-    ['Norway', 'Oslo']
-  ]
-  console.table(countries)
+  ['asia', ['Finland', 'Helsinki']],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+console.table(countries)
 
 /**
 ┌─────────┬──────────┬───────────────────────────┐
@@ -91,21 +91,21 @@ const countries = [
 └─────────┴──────────┴───────────────────────────┘
  */
 
-const users =[
-    {
-        name:'sharifa',
-        age:21,
-        title:'programmer'
-    },
-    {
-        name:'Deepali',
-        age:24,
-        title:'programmer'
-    },
-    {
-        name:'mohini',
-        age:27
-    }
+const users = [
+  {
+    name: 'sharifa',
+    age: 21,
+    title: 'programmer'
+  },
+  {
+    name: 'Deepali',
+    age: 24,
+    title: 'programmer'
+  },
+  {
+    name: 'mohini',
+    age: 27
+  }
 ]
 
 console.table(users);
@@ -123,16 +123,16 @@ console.table(users);
 //time()
 //timeEnd()
 const countrie = [
-    ['Finland', 'Helsinki'],
-    ['Sweden', 'Stockholm'],
-    ['Norway', 'Oslo']
-  ]
-  
-  console.time('Regular for loop')
-  for (let i = 0; i < countrie.length; i++) {
-    console.log(countrie[i][0], countrie[i][1])
-  }
-  console.timeEnd('Regular for loop')
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+
+console.time('Regular for loop')
+for (let i = 0; i < countrie.length; i++) {
+  console.log(countrie[i][0], countrie[i][1])
+}
+console.timeEnd('Regular for loop')
 
 console.time('forEach loop')
 countrie.forEach(([name, city]) => {
@@ -145,16 +145,16 @@ console.timeEnd('forEach loop')
 console.info('sharifa');
 
 //assert()
-console.assert(5<10,'5 is less than 10');
+console.assert(5 < 10, '5 is less than 10');
 //no result
 
-console.assert(5>10,'5 is less than 10');
+console.assert(5 > 10, '5 is less than 10');
 //Assertion failed: 5 is less than 10
 
-for(let i=0;i<=5;i++){
-    let msg = `${i} is not odd`
-    console.log('this # is '+i);
-    console.assert(i % 2 !=0,msg)
+for (let i = 0; i <= 5; i++) {
+  let msg = `${i} is not odd`
+  console.log('this # is ' + i);
+  console.assert(i % 2 != 0, msg)
 }
 
 
@@ -174,8 +174,8 @@ People
  */
 
 //count()
-const fun =() =>{
-    console.count('this function is called')
+const fun = () => {
+  console.count('this function is called')
 }
 
 fun()

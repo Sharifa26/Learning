@@ -22,9 +22,9 @@ const count = new Map();
 
 console.log(count);
 
-count.set('apple','160');
-count.set('grape','100');
-count.set('banana','40');
+count.set('apple', '160');
+count.set('grape', '100');
+count.set('banana', '40');
 
 console.log(count);
 
@@ -34,6 +34,6 @@ console.log(count.has('banana'));
 console.log(count.has('kiwi'));
 
 
-for(const c of count){
+for (const c of count) {
     console.log(c);
 }
